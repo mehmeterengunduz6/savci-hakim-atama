@@ -94,14 +94,14 @@ const EditableMap = () => {
   };
 
   return (
-    <>
-      <button onClick={selectRandomCity} className="mb-4 p-2 bg-blue-500 text-white rounded">
+    <div className="w-full max-w-[1200px] flex flex-col items-center">
+      <button onClick={selectRandomCity} className="mb-20 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">
         Select Random City
       </button>
       <svg
-        width="1200"
-        height="600"
+        className="w-full h-auto"
         viewBox="0 0 792.5976 334.55841"
+        preserveAspectRatio="xMidYMid meet"
         xmlns="http://www.w3.org/2000/svg"
       >
         <TurkeyMap onClick={(e) => {
@@ -123,7 +123,7 @@ const EditableMap = () => {
         ))}
       </svg>
       {isModalOpen && <Modal title={selectedCity} onClose={closeModal} />}
-    </>
+    </div>
   );
 };
 
