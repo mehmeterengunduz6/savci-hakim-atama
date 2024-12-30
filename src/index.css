@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ad-banner {
+  margin: 20px 0;
+  text-align: center;
+}
